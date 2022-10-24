@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+	setlocale(LC_ALL, "Portuguese");
+	int n1, n2;
+	printf("----------- Início de Programa -----------\n");
+	printf("Entre com o n1: \n");
+	scanf("%d", &n1);
+	printf("Entre com o n2: \n");
+	scanf("%d", &n2);
+	
+	if (n1 == n2)
+		printf("Valores entrados são iguais");
+	else
+		printf("Valores entrados são diferentes");
+	
+	return 0;
+}
