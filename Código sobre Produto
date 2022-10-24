@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+	setlocale(LC_ALL, "Portuguese");
+	double preco, tot;
+	int qtd;
+	printf("----------- Início de Programa -----------\n");
+	printf("Entre com o preço: \n");
+	scanf("%lf", &preco);
+	printf("Entre com a quantidade: \n");
+	scanf("%d", &qtd);
+	tot = preco * qtd;
+	
+	if (qtd >= 10){
+		tot = tot - (tot * 0.1);
+	}
+	printf("Você comprou %d produtos \n",qtd);
+	printf("Eles custaram %.2f reais\n",preco);
+	printf("Totalizando %.2f reais",tot);
+	
+	return 0;
+}
