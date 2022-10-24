@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <string.h>
+#define TAM 3
+
+typedef struct banda{
+    char nome[20];
+    char estilo[20];
+    int tamanho;
+    int ranking;
+    
+} BANDA;
+
+void lerbanda (BANDA *b){
+        
+        for(int i=0; i<TAM; i++){
+        
+      printf("\nNome da banda:");    scanf("%s", b[i].nome);
+      printf("Estilo da Banda:");  scanf("%s", b[i].estilo);
+      printf("Tamanho da Banda:"); scanf("%d", &b[i].tamanho);
+      printf("Ranking da Banda:"); scanf("%d", &b[i].ranking);
+    }
+}
+    
+void imprimebanda (BANDA *imprime){
+        
+        for(int i=0; i<TAM; i++){
+        
+        printf("\n\nNome:%s", imprime[i].nome);
+        printf("\nEstilo:%s", imprime[i].estilo);
+        printf("\nTamanho:%d", imprime[i].tamanho);
+        printf("\nRank:%d", imprime[i].ranking);
+    }
+}
+    
+int main (){
+        
+        BANDA b[TAM];
+        lerbanda (b);
+        printf("\n\nListagem de Todas as Bandas:");
+        imprimebanda (b);
+        
+        return 0;
+    }
+        
