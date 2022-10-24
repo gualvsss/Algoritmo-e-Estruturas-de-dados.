@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <locale.h>
+
+ int main(){
+ 	 
+ 	 setlocale(LC_ALL, "Portuguese");
+ 	 int valor, res;
+ 	 printf("------- Início de Programa ------\n");
+ 	 printf("Entre com um valor numérico inteiro:\n");
+ 	 
+ 	 scanf("%d", &valor);
+ 	 res = valor % 2;
+ 	 if (res==0)
+ 	 printf("Valor entrado é: par\n\n"); 	
+ 	 else
+ 	 printf("Valor entrado é: impar\n\n");
+ 	    
+ 	printf("----- Fim de Programa -----");
+ 	
+ 	return 0;
+ }
+ 
