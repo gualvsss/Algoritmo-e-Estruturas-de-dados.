@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+	setlocale(LC_ALL, "Portuguese");
+	int idade;
+	printf("----------- Início de Programa -----------\n");
+	printf("Digite a sua idade: \n");
+	scanf("%d", &idade);
+	
+	if (idade >= 18 && idade <= 67)
+		printf("Você pode doar sangue");
+	else
+		printf("Você não pode doar sangue");
+	
+	return 0;
+}
