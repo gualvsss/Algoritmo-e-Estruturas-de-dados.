@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <locale.h>
+
+ double main(){
+ 	 
+ 	 setlocale(LC_ALL, "Portuguese");
+ 	 double N1, N2, N3, Media;
+ 	 printf("------- Início de Programa ------\n");
+ 	 
+	  printf("Entre com o valor de N1:\n");
+ 	 scanf("%lf", &N1);
+ 	 
+	  printf("Entre valor de N2:\n");
+	  scanf("%lf", &N2);
+ 	 
+	  printf("Entre com o valor de N3:\n");
+	  scanf("%lf", &N3);
+	  
+	  Media = (N1 + N2 + N3) / 3;
+	
+	  if (Media >= 6.0)
+	   printf("Aluno aprovado\n\n");
+	   
+	  else
+	   printf("Aluno Reprovado\n\n");
+	   
+	  printf("------- Fim de Programa ------- ");
+	  
+	  return 0;
+}
